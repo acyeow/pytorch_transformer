@@ -36,7 +36,7 @@ class PositionalEncoding(nn.Module):
         self.register_buffer('pe', pe)
         
     def forward(self, x):
-        x = x + (self.pe[:, :self.seq_len, :]).requires_grad_(False)
+        x = x + (self.pe[:, :x.shape[1], :]).requires_grad_(False)
         return self.dropout(x)
     
 class LayerNormalization(nn.Module):
@@ -114,7 +114,7 @@ class MultiHeadAttentionBlock(nn.Module):
         
         # (batch_size, seq_len, d_model) -> (batch_size, seq_len, h, d_k)
         query = query.view(query.shape[0], query.shape[1], self.h, self.d_k)
-        key = key.view(key.shape[0], query.shape[1], self.h, self.d_k)
+        key = key.view(key.shape[0], key.shape[1], self.h, self.d_k)
         value = value.view(value.shape[0], value.shape[1], self.h, self.d_k)
         # (batch_size, seq_len, h, d_k) -> (batch_size, h, seq_len, d_k)
         query = query.transpose(1, 2)
