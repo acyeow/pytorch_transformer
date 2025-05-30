@@ -1,7 +1,5 @@
 # PyTorch Transformer for Neural Machine Translation
 
-![Transformer Architecture](https://machinelearningmastery.com/wp-content/uploads/2021/08/attention_research_1.png)
-
 ## 🚀 Project Overview
 
 This project implements a Transformer architecture from scratch using PyTorch for neural machine translation tasks. The implementation closely follows the architecture described in the "Attention is All You Need" paper by Vaswani et al. (2017), featuring multi-head attention mechanisms, positional encodings, and encoder-decoder structure.
