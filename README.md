@@ -4,15 +4,6 @@
 
 This project implements a Transformer architecture from scratch using PyTorch for neural machine translation tasks. The implementation closely follows the architecture described in the "Attention is All You Need" paper by Vaswani et al. (2017), featuring multi-head attention mechanisms, positional encodings, and encoder-decoder structure.
 
-## ✨ Key Features
-
-- **Full Transformer Implementation**: Built from the ground up including all essential components
-- **Multi-head Attention**: Implementation of scaled dot-product attention with multiple heads
-- **Positional Encodings**: Sinusoidal position embeddings to incorporate sequence order
-- **Layer Normalization & Residual Connections**: For stable and efficient training
-- **Greedy Decoding**: For inference and translation generation
-- **Tensorboard Integration**: For monitoring training metrics
-
 ## 🔧 Technical Architecture
 
 ### Model Components
