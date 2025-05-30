@@ -48,7 +48,7 @@ The model is trained on the OPUS Books dataset for English to Italian translatio
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/pytorch_transformer.git
+git clone https://github.com/acyeow/pytorch_transformer.git
 cd pytorch_transformer
 
 # Install dependencies
